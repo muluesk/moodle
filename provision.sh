@@ -106,9 +106,9 @@ service apache2 restart
 cat <<EOF
 Service installed at http://moodle.local/
 
-You will need to add a hosts file entry for:
-
-moodle.local points to 192.168.33.10
+You will need to add a hosts file entry for the ip like so:
+172.16.46.5	moodle.local
+for Windows hosts file is located at: C:\Windows\System32\drivers\etc
 
 username: admin
 password: Admin1!
