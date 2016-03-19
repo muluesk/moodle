@@ -7,7 +7,7 @@ Vagrant.configure(2) do |config|
 	config.vm.synced_folder "./moodle/", "/var/www/moodle", create: true, owner: 'www-data', group: 'www-data'
 	config.vm.provider "virtualbox" do |vb|
 		vb.name = "moodle"
-		vb.memory = 1024
+		vb.memory = 2048 
 		vb.cpus = 2
 	end
 	config.vm.provision :shell, path: "provision.sh"
