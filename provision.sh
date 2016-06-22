@@ -106,11 +106,15 @@ service apache2 restart
 cat <<EOF
 Service installed at http://moodle.local/
 
-if application doesn't start check if there is an entry in the hosts file like so:
+Do the following to finalize configuration:
+
+1) open windows hosts file: C:\Windows\System32\drivers\etc"
+2) at the end of the file add entry like so and save the file: 
 	172.16.46.5	moodle.local
 	172.16.46.5	www.moodle.local
 
-for Windows hosts file is located at: C:\Windows\System32\drivers\etc
+Note: sometimes you have to open notepad as administrator to edit hosts file depending on the security setting in you computer.
+
 
 username: admin
 password: Admin1!
